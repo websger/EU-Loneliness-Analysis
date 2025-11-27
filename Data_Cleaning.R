@@ -6,6 +6,7 @@ install.packages("mediation")
 install.packages("psych")
 install.packages("car")
 install.packages("readr")
+install.packages("lmtest")
 
 # Libraries
 library(tidyr)
@@ -15,6 +16,7 @@ library(mediation)
 library(psych)
 library(car)
 library(readr)
+library(lmtest)
 
 # Load Data
 df_loneliness <- read_csv("data_raw/eu_loneliness_survey_eu27_labels.csv")
