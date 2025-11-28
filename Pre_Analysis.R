@@ -14,14 +14,16 @@ df_loneliness_clean <- read_csv("data_clean/eu_loneliness_clean.csv")
 View(eu_loneliness_clean)
 
 #Viewing Variables
-hist(df_loneliness_clean$gender_num)
+table(df_loneliness_clean$gender_num)
 hist(df_loneliness_clean$relationship_need_num)
-hist(df_loneliness_clean$loneliness_total)
+ggplot(df_loneliness_clean, aes(x = loneliness_total)) +
+  geom_freqpoly(binwidth = 0.5)
 
 #Checking Linearity of Regression
 model_regression <- lm(loneliness_total ~ worklife_balance_num, data = df_loneliness_clean)
 
-plot_linearity_1 <- crPlots(model_regression, pch=NA) #linearity visually appropriate
+plot_linearity <- crPlots(model_regression, pch=NA) #linearity visually appropriate
+plot_linearity
 
 #Checking normal distribution
 residuals_regression <- residuals(model_regression)
@@ -30,9 +32,6 @@ qqnorm_residuals_regression <- qqnorm(residuals_regression)
 qqline_residuals_regression <- qqline(residuals_regression) #Normal distribution visually appropriate
 
 #homoskedasticity
-homoskedasticity_regression <- bptest(model_regression)
-homoskedasticity_regression
-
 df_res <- data.frame(fitted = fitted(model_regression),
                      resid  = resid(model_regression))
 
