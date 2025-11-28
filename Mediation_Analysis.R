@@ -14,6 +14,7 @@ df_loneliness_clean <- read_csv("data_clean/eu_loneliness_clean.csv")
 View(eu_loneliness_clean)
 
 #Analysis
+set.seed(2025)
 results_mediation <- mediation::mediate(model.m = lm(relationship_need_num ~ gender_num, data = df_loneliness_clean),
                                         model.y = lm(loneliness_total ~ gender_num + relationship_need_num, data = df_loneliness_clean),
                                         treat = "gender_num",
