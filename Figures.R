@@ -56,7 +56,7 @@ path_c_summary <- df_loneliness_clean %>%
     ci_lower = mean_lon - 1.96 * se,
     ci_upper = mean_lon + 1.96 * se)
 
-path_c <- ggplot(path_c_summary, aes(x = factor(gender_num), y = mean_lon)) +
+path_c <- ggplot(path_c_summary, aes(x = factor(gender_num, labels=c("Male", "Female")), y = mean_lon)) +
   geom_point(size = 3) +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.1) +
   labs(x = "Gender", y = "Loneliness (Mean + 95% CI)") +
