@@ -1,2 +1,4 @@
 # EU-Loneliness-Analysis
 I want to analyze the effects of gender, relationship-needs and work-life-balance on loneliness scores. The estimated outcomes ought to be a difference in relationship-needs between males and females. This difference in relationship need might explain the difference of loneliness feelings in men and women. In the literature sometimes men will rate higher on loneliness other times women. Mostly depending on how loneliness is assessed. I think this difference can be partially explained by relationship need. Another factor which I think affects feelings of loneliness is work-life-balance, so that people with a worse work-life-balance score higher on loneliness.
+
+OSF-Link: https://osf.io/e3u69/overview
