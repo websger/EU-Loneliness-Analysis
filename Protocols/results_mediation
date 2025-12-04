@@ -1,0 +1,5 @@
+results
+A causal mediation analysis was conducted to test whether the mediator accounted for the association between work–life balance and loneliness. The indirect effect (ACME) was small and not statistically significant, p = .076. The direct effect remained significant (ADE = 0.028, 95% CI [0.012, 0.045], p < .001). The total effect was also significant (Total Effect = 0.027, 95% CI [0.011, 0.044], p < .001). The proportion mediated was not significant, p = .076. 
+The mediation analysis shows that the mediator relationship-need (relationship_need_num) has almost no eﬀect on the relationship between gender (gender_num) and loneliness (loneliness_total). The ACME (indirect eﬀect) is very small and not statistically significant (p = 0.076), indicating that the pathway through the mediator is negligible.
+The total eﬀect is significant, but it is almost entirely driven by the direct eﬀect. Only a very small, non-significant proportion of the eﬀect is mediated. As the ADE is positive women in our sample show higher scores on loneliness.
+In total all effects, even the statistically significant ones, are rather small. 
